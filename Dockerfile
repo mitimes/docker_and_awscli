@@ -14,6 +14,5 @@ RUN \
     awscli \
     awsebcli \
     docker-compose && \
-  apk --purge -v del py-pip && \
   rm /var/cache/apk/* && \
   mkdir /root/.aws
