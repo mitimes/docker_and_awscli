@@ -1,6 +1,6 @@
-FROM docker
+FROM docker:latest
 RUN \
-  apk --update add \ 
+  apk --update --no-cache add \ 
     bash \
     curl \
     less \
@@ -14,5 +14,4 @@ RUN \
     awscli \
     awsebcli \
     docker-compose && \
-  rm /var/cache/apk/* && \
   mkdir /root/.aws
