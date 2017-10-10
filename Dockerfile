@@ -1,4 +1,4 @@
-FROM docker:17.09-ce
+FROM docker:latest
 RUN \
   apk --update --no-cache add \ 
     bash \
