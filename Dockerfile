@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:17.09-ce
 RUN \
   apk --update --no-cache add \ 
     bash \
@@ -14,4 +14,5 @@ RUN \
     awscli \
     awsebcli \
     docker-compose && \
+  pip uninstall docker-py; pip uninstall docker; pip install docker && \
   mkdir /root/.aws
