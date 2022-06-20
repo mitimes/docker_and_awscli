@@ -12,7 +12,4 @@ RUN \
     py-pip && \
   pip install --upgrade \
     awscli \
-    awsebcli \
-    docker-compose && \
-  pip uninstall docker-py; pip uninstall docker; pip install docker && \
   mkdir /root/.aws
